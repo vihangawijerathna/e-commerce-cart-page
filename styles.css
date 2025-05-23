@@ -9,6 +9,7 @@ body {
   background-color: #121212;
   color: #ffffff;
   display: flex;
+  flex-direction: column; /* Add this line */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -185,4 +186,22 @@ h2 {
 
 .hidden {
   display: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  width: 100%; /* Add this to make it full width */
+  position: relative; /* Add this to help position it properly */
+  bottom: 0; /* Optional: pin to bottom */
+}
+
+a {
+  color: #1976d2; /* Blue color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
