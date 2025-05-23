@@ -40,6 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCart();
   }
 
+  cartItems.addEventListener("click", (e) => {
+    if (e.target.classList.contains("remove-btn")) {
+      const index = parseInt(e.target.getAttribute("data-index"));
+      removeFromCart(index);
+    }
+  });
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    renderCart();
+  }
+
   function renderCart() {
     cartItems.innerHTML = "";
     let totalPrice = 0;
@@ -65,10 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  checkOutBtn.addEventListener("click", ()=>{
+  checkOutBtn.addEventListener("click", () => {
     console.log(totalPriceDisplay.textContent);
     cart.length = 0;
     alert("Thank you for your purchase!");
     renderCart();
-  })
+  });
 });
