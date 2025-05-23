@@ -17,7 +17,7 @@ A simple e-commerce shopping cart implementation with product listing and cart m
 
 ## Screenshots
 
-(Add your screenshots here)
+![E-commerce Cart Screenshot](./screenshot.png)
 
 ## Technologies Used
 
@@ -57,6 +57,7 @@ e-commerce-cart-page/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styling
 ├── script.js           # JavaScript functionality
+├── screenshot.png      # Screenshot of the application
 └── README.md           # Project documentation
 ```
 
@@ -83,10 +84,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Vihanga Wijerathna - [GitHub](GitHub)
+Vihanga Wijerathna - [GitHub](https://github.com/vihangawijerathna)
 
 Project Link: https://github.com/vihangawijerathna/e-commerce-cart-page
-
-```
-
-```
