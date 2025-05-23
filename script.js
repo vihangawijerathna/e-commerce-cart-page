@@ -51,7 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
       cart.forEach((item, index) => {
         totalPrice += item.price;
         const cartItem = document.createElement("div");
-        cartItem.innerHTML = `${item.name} - $${item.price.toFixed(2)} `;
+        cartItem.innerHTML = `${item.name} - $${item.price.toFixed(2)}
+        <button class="remove-btn" data-index="${index}">Remove</button>`;
+        cartItem.classList.add("cart-item");
         cartItems.appendChild(cartItem);
         totalPriceDisplay.textContent = `Total Price: $${totalPrice.toFixed(
           2
